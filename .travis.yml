@@ -4,3 +4,8 @@ mono: none
 dotnet: 2.1.502
 script:
  - dotnet restore
+sudo: required
+dist: trusty
+
+before_install:
+  - sudo apt-get update```
