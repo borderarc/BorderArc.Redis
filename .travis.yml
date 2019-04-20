@@ -1,11 +1,13 @@
 language: csharp
 solution: BorderArc.Redis.sln
 mono: none
-dotnet: 2.1.502
-script:
- - dotnet restore
-sudo: required
-dist: trusty
-
 before_install:
   - sudo apt-get update```
+sudo: required
+dist: trusty
+dotnet: 2.1.500
+script:
+ - dotnet restore
+ - dotnet build -c Release BorderArc.Redis /m:1
+
+
