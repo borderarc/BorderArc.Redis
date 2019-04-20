@@ -1,9 +1,5 @@
 language: csharp
-solution: BorderArc.Redis.sln
 mono: none
-before_install:
-  - sudo apt-get update```
-sudo: required
 dist: trusty
 dotnet: 2.1.500
 script:
