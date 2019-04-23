@@ -13,6 +13,7 @@ after_success:
   #    .ci/generateDocumentation.sh || travis_terminate 1
   #  fi
   - >-
+    echo "args [$TRAVIS_BRANCH" = "master" && -n "$TRAVIS_BUILD_DOCS]"
     if [[ "$TRAVIS_BRANCH" = "master" && -n "$TRAVIS_BUILD_DOCS" ]] ; then
       cd $PROJECT_DIR_ABS
       source .ci/setup-ssh.sh || travis_terminate 1
