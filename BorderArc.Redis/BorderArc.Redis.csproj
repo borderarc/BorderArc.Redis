@@ -27,4 +27,10 @@
     <PackageReference Include="StackExchange.Redis" Version="2.0.601" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include=".ci\.generateDocumentation.sh" />
+    <None Include=".ci\private.pem.enc" />
+    <None Include=".ci\setup-ssh.sh" />
+  </ItemGroup>
+
 </Project>
