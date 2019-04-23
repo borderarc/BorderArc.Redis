@@ -29,6 +29,7 @@
 
   <ItemGroup>
     <None Include=".ci\.generateDocumentation.sh" />
+    <None Include=".ci\aftersuccess.sh" />
     <None Include=".ci\private.pem.enc" />
     <None Include=".ci\setup-ssh.sh" />
   </ItemGroup>
